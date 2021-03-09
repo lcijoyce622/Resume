@@ -239,6 +239,15 @@ html body #homepage {
           transform: skewY(10deg);
 }
 
+@media (max-width: 991.98px) {
+  html body #homepage {
+    padding-top: 30%;
+  }
+  html body #homepage .bg {
+    top: 0%;
+  }
+}
+
 html body #homepage .bg {
   width: 100%;
   height: 100%;
@@ -454,9 +463,15 @@ html body #intropage {
   margin: 2rem 0 1rem 0;
   background: linear-gradient(20deg, rgba(255, 255, 255, 0.25), #efbad6bb);
   text-align: center;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
   position: relative;
+}
+
+@media (max-width: 991.98px) {
+  html body #intropage {
+    padding-top: 20%;
+  }
 }
 
 html body #intropage .ball {
@@ -465,8 +480,8 @@ html body #intropage .ball {
 }
 
 html body #intropage .aboutme {
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
   position: relative;
 }
 
@@ -691,13 +706,22 @@ html body #portfolio {
   width: 100%;
   margin: 1rem 0;
   text-align: center;
-  -webkit-transform: skewY(-3deg);
-          transform: skewY(-3deg);
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("../img/img3");
+}
+
+@media (max-width: 991.98px) {
+  html body #portfolio {
+    padding-top: 20%;
+  }
+  html body #portfolio .bg {
+    top: 0%;
+  }
 }
 
 html body #portfolio .bg {
@@ -708,8 +732,8 @@ html body #portfolio .bg {
 }
 
 html body #portfolio .container {
-  -webkit-transform: skewY(3deg);
-          transform: skewY(3deg);
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
   padding-top: 4%;
 }
 
@@ -832,6 +856,12 @@ html body #contact {
   text-align: center;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+}
+
+@media (max-width: 991.98px) {
+  html body #contact {
+    padding-top: 20%;
+  }
 }
 
 html body #contact .container {

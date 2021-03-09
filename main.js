@@ -3,7 +3,7 @@ var skillArray = [
     { title: 'Android', context: '-撰寫畢業專題line up</br>-使用語言Java</br>-負責客戶端前端功能撰寫' },
     { title: 'JavaScript', context: '-撰寫專題山野閃靈</br>-個人履歷介紹網站</br>-負責網頁前端及整合' },
     { title: 'HTML', context: '-撰寫專題山野閃靈</br>-個人履歷介紹網站' },
-    { title: 'JQuery', context: '-更輕鬆方便的製作網站功能' },
+    { title: 'JQuery', context: '-更輕鬆方便的製作網站功能</br>-使用jquery套件' },
     { title: 'MySQL', context: '-撰寫基本語法</br>-學校課程使用</br>-專案使用phpmyadmin建立資料庫' },
     { title: 'PHP', context: '-連結後端資料庫</br>-過濾資料避免瀏覽器負荷過大' },
     { title: 'GIT', context: '-版本控制</br>-Github專案練習' },
