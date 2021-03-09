@@ -1,6 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-*.rb linguist-language=Java
-assets/vendor/* linguist-vendored
-assets/images/* linguist-vendored=false
-js/main.min.js linguist-generated=true
+*.html linguist-language=Java 
+*.js linguist-language=Java 
+*.scss linguist-language=Java 
