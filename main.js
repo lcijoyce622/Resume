@@ -1,16 +1,16 @@
 var skillArray = [
-    { title: 'JAVA', context: '-在校期間使用的語言</br>-學習演算法、資料結構等課程</br>-用來刷leetcode解題' },
+    { title: 'JAVA', context: '-在校期間使用的語言</br>-學習演算法、資料結構等課程</br>-刷leetcode解題' },
     { title: 'Android', context: '-撰寫畢業專題line up</br>-使用語言Java</br>-負責客戶端前端功能撰寫' },
-    { title: 'JavaScript', context: '-撰寫專題石虎危機</br>-網址................</br>-負責網頁前端及整合' },
-    { title: 'HTML', context: '-撰寫專題石虎危機</br>-個人履歷介紹網站' },
+    { title: 'JavaScript', context: '-撰寫專題山野閃靈</br>-個人履歷介紹網站</br>-負責網頁前端及整合' },
+    { title: 'HTML', context: '-撰寫專題山野閃靈</br>-個人履歷介紹網站' },
     { title: 'JQuery', context: '-更輕鬆方便的製作網站功能' },
     { title: 'MySQL', context: '-撰寫基本語法</br>-學校課程使用</br>-專案使用phpmyadmin建立資料庫' },
     { title: 'PHP', context: '-連結後端資料庫</br>-過濾資料避免瀏覽器負荷過大' },
     { title: 'GIT', context: '-版本控制</br>-Github專案練習' },
-    { title: 'BootStrap', context: '-統一網站風格樣式</br>-更加流暢的製作動畫效果' },
-    { title: 'SCSS/CSS', context: '-美化網頁<br>-個人化的設計' },
-    { title: 'Illustrator', context: '-基本使用功能<br>-製作wireframe、<br>-設計logo名片等物件' },
-    { title: 'PhotoShop', context: '-基本使用功能<br>-matte painting<br>-修圖、繪畫、合成' },
+    { title: 'BootStrap', context: '-統一網站風格樣式</br>-更加流暢的製作動畫效果</br>-RWD響應式網頁設計' },
+    { title: 'SCSS/CSS', context: '-美化網頁<br>-個人化的設計<br>-簡單動畫特效' },
+    { title: 'Illustrator', context: '-基本使用功能<br>-製作wireframe、<br>-設計icon名片等物件' },
+    { title: 'PhotoShop', context: '-基本使用功能<br>-matte painting<br>-修圖、繪畫、mockup' }
 ]
 
 
