@@ -28,7 +28,7 @@ for (let i = 0; i < skillArray.length; i++) {
     if (i > 2 && i % 3 == 0) {
         count++;
     }
-    $('.row' + count).append('<div class="card' + (i + 1) + ' card col-md-12 col-lg"data-toggle="collapse" href="#multiCollapseExample' + (i + 1) + '" role="button" aria-expanded="false" aria-controls="multiCollapseExample' + (i + 1) + '"><div class=" front"><h2 class="card-title">' + skillArray[i].title + '</h2></div><div class="collapse multi-collapse" id="multiCollapseExample' + (i + 1) + '"><div class="card-body back text-center"><p class="card-text">' + skillArray[i].context + '</p></div></div></div>');
+    $('.row' + count).append('<div class="card' + (i + 1) + ' card col-md-12 col-lg"data-toggle="collapse" href="#multiCollapseExample' + (i + 1) + '" role="button" aria-expanded="false" aria-controls="multiCollapseExample' + (i + 1) + '"><div class="front"><h2 class="card-title">' + skillArray[i].title + '</h2></div><div class="collapse multi-collapse" id="multiCollapseExample' + (i + 1) + '"><div class="card-body back text-center"><p class="card-text">' + skillArray[i].context + '</p></div></div></div>');
 
 }
 

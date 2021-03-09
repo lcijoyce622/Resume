@@ -463,10 +463,10 @@ html body #skills .container .cardpool .card:hover {
   html body #skills .container .cardpool .front {
     position: relative;
     background-color: none !important;
-    margin-top: 1% 0 10% 0;
   }
   html body #skills .container .cardpool .front .card-title {
     position: relative;
+    margin-bottom: 1%;
   }
   html body #skills .container .cardpool .back {
     background-color: none;
