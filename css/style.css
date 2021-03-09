@@ -3,6 +3,7 @@ html {
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 html p,
@@ -138,10 +139,6 @@ html body #homepage .ani .intro .aboutbtn:hover {
 
 html body #homepage .ani .intro .aboutbtn:hover:before {
   width: 100%;
-}
-
-html body #intropage:hover {
-  overflow: inherit;
 }
 
 html body #intropage:hover .ball {
@@ -468,6 +465,9 @@ html body #skills .container .cardpool .card:hover {
     background-color: none !important;
     margin-top: 1% 0 10% 0;
   }
+  html body #skills .container .cardpool .front .card-title {
+    position: relative;
+  }
   html body #skills .container .cardpool .back {
     background-color: none;
     position: relative;
@@ -568,6 +568,7 @@ html body #portfolio .container .cover h1 {
           transform: translate(-50%, -50%);
   -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
+  white-space: nowrap;
 }
 
 html body #portfolio .container .cover .url {
@@ -589,7 +590,6 @@ html body #portfolio .container .cover:hover {
 
 html body #portfolio .container .cover:hover h1 {
   opacity: 1;
-  position: absolute;
   top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -602,7 +602,6 @@ html body #portfolio .container .cover:hover h1 {
 
 html body #portfolio .container .cover:hover .url {
   opacity: 1;
-  position: absolute;
   top: 60%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
