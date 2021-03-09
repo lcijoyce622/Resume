@@ -688,7 +688,7 @@ html body #skills .container .cardpool .card:hover {
   }
   html body #skills .container .cardpool .front .card-title {
     position: relative;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
   }
   html body #skills .container .cardpool .back {
     background-color: none;

@@ -508,26 +508,14 @@ html {
 
         #skills {
             width: 100%;
-            // padding-top: 5%;
             padding-bottom: 5%;
-
-            // background: -webkit-linear-gradient(30deg, rgba(255, 255, 255, 0.95), $color1);
-            // background: -o-linear-gradient(30deg, rgba(255, 255, 255, 0.95), $color1);
-            // background: -moz-linear-gradient(30deg, rgba(255, 255, 255, 0.95), $color1);
-            // background: linear-gradient(30deg, rgba(255, 255, 255, 0.95), $color1);
-
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             position: relative;
             text-align: center;
             transform: skewY(7deg);
-
-
-
-
             .container {
-
                 transform: skewY(-7deg);
                 padding-bottom: 5%;
                 padding-top: 5%;
@@ -625,7 +613,7 @@ html {
 
                             .card-title {
                                 position: relative;
-                                margin-bottom: 5%;
+                                margin-bottom: 8%;
                             }
                         }
 
