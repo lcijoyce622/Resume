@@ -466,18 +466,19 @@ html {
                             -webkit-transform: none;
                             -moz-transform: none;
                             transform: none;
-
                         }
 
                         .card {
                             height: unset;
-
                         }
 
                         .front {
                             position: relative;
                             background-color: none !important;
                             margin-top: 1% 0 10% 0;
+                            .card-title {
+                                position: relative;
+                            }
                         }
 
                         .back {
@@ -585,6 +586,7 @@ html {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         transition: ease-in 0.5s;
+                        white-space: nowrap;
                     }
                     .url {
                         opacity: 0;
@@ -593,9 +595,7 @@ html {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         transition: ease-in 0.5s;
-                       
                     }
-
                 }
 
                 .cover:hover {
@@ -604,7 +604,6 @@ html {
 
                     h1 {
                         opacity: 1;
-                        position: absolute;
                         top: 40%;
                         left: 50%;
                         transform: translate(-50%, -50%);
@@ -616,7 +615,6 @@ html {
 
                     .url {
                         opacity: 1;
-                        position: absolute;
                         top: 60%;
                         left: 50%;
                         transform: translate(-50%, -50%);
