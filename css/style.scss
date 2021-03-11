@@ -505,7 +505,6 @@ html {
                 }
             }
         }
-
         #skills {
             width: 100%;
             padding-bottom: 5%;
@@ -519,7 +518,6 @@ html {
                 transform: skewY(-7deg);
                 padding-bottom: 5%;
                 padding-top: 5%;
-
                 h1 {
                     font-weight: bold;
                     background-image: $fontbg1;
@@ -531,12 +529,10 @@ html {
                     -webkit-text-fill-color: transparent;
                     margin-bottom: 3%;
                 }
-
                 .cardpool {
                     -webkit-perspective: 700;
                     -moz-perspective: 700;
                     perspective: 700;
-
                     .card {
                         border: 2px dashed $color4;
                         background: -webkit-linear-gradient(220deg, $color3, white, $color4);
@@ -553,7 +549,6 @@ html {
                         -webkit-transform-style: preserve-3d;
                         transform-style: preserve-3d;
                         position: relative;
-
                     }
 
                     .front,
@@ -629,9 +624,7 @@ html {
                                 position: relative;
                             }
                         }
-
                     }
-
                 }
             }
         }
