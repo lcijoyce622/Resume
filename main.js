@@ -9,8 +9,8 @@ var skillArray = [
     { title: 'GIT', context: '-版本控制</br>-Github專案練習' },
     { title: 'BootStrap', context: '-統一網站風格樣式</br>-更加流暢的製作動畫效果</br>-RWD響應式網頁設計' },
     { title: 'SCSS/CSS', context: '-美化網頁<br>-個人化的設計<br>-簡單動畫特效' },
-    { title: 'Illustrator', context: '-基本使用功能<br>-製作wireframe、<br>-設計icon名片等物件' },
-    { title: 'PhotoShop', context: '-基本使用功能<br>-matte painting<br>-修圖、繪畫、mockup' }
+    { title: 'Illustrator', context: '-製作wireframe、<br>-設計icon、名片等物件' },
+    { title: 'PhotoShop', context: '-matte painting<br>-修圖、繪畫、mockup' }
 ]
 
 
