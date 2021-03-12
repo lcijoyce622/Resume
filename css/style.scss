@@ -27,17 +27,21 @@ html {
         letter-spacing: 1.5px;
         font-family: $fontfamily;
 
-        section {
-            animation: showpage 2.5s alternate ease-in forwards;
-        }
-
-        @keyframes showpage {
-            0% {
-                z-index: -20;
+        @media (max-width: 991.98px) {
+            #backtotop {
+                left: 50%;
+                transform: translate(-50%,0%);
             }
-
-            100% {
-                z-index: 20;
+        }
+        #backtotop {
+            display: none;
+            position: fixed;
+            top: 90%;
+            right: 0%;
+            z-index: 80;
+            img{
+                opacity: 0.3;
+                width: 50px;
             }
         }
 
@@ -172,9 +176,6 @@ html {
             @media (max-width: 991.98px) {
                 padding-top: 30%;
 
-                .bg {
-                    top: 0%;
-                }
             }
 
             margin: 0;
@@ -196,6 +197,7 @@ html {
                 background: -moz-linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
                 background: linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
                 position: absolute;
+                top: 0;
             }
 
             .ani {
@@ -208,8 +210,6 @@ html {
                     margin-top: 40%;
                     letter-spacing: 8px;
                     padding-left: 20%;
-
-
 
                     .intro1::before {
                         content: "";
@@ -312,21 +312,24 @@ html {
                 width: 400px;
                 animation: slide 2s;
                 opacity: 0.2;
-                animation: slide 2s;
 
+                // transform: skewY(7deg);
                 @keyframes slide {
                     0% {
                         transform: scale(0.5);
+                        // transform: skewY(7deg);
                         opacity: 0.2;
                     }
 
                     50% {
                         transform: scale(1);
+                        // transform: skewY(7deg);
                         opacity: 0.5;
                     }
 
                     100% {
                         transform: scale(1);
+                        // transform: skewY(7deg);
                         opacity: 0.2;
                     }
                 }
@@ -395,6 +398,28 @@ html {
         #intropage {
             @media (max-width: 991.98px) {
                 padding-top: 20%;
+
+                .about-context {
+                    margin-top: 0%;
+                }
+
+                .avatarfr {
+                    padding: 30px;
+                    margin: 50px;
+                    filter: grayscale(0%);
+
+                    img {
+                        border-radius: 10%;
+                    }
+                }
+
+                .avatarfr:hover {
+                    transition: none;
+
+                    img {
+                        border-radius: 10%;
+                    }
+                }
             }
 
             width: 100%;
@@ -475,26 +500,6 @@ html {
                             transition: ease-in 0.2s;
                         }
                     }
-
-                    @media (max-width: 991.98px) {
-                        .avatarfr {
-                            padding: 30px;
-                            margin: 50px;
-                            filter: grayscale(0%);
-
-                            img {
-                                border-radius: 10%;
-                            }
-                        }
-
-                        .avatarfr:hover {
-                            transition: none;
-
-                            img {
-                                border-radius: 10%;
-                            }
-                        }
-                    }
                 }
 
                 .about-context {
@@ -502,13 +507,6 @@ html {
                     text-align: left;
                     width: 100%;
                     line-height: 40px;
-
-                }
-
-                @media (max-width: 991.98px) {
-                    .about-context {
-                        margin-top: 0%;
-                    }
                 }
             }
         }
@@ -782,25 +780,41 @@ html {
             }
         }
 
-
         #contact {
             @media (max-width: 991.98px) {
                 padding-top: 20%;
+
+                .iconpool {
+                    display: grid;
+                    grid-auto-flow: column;
+
+                    a {
+                        margin: auto;
+
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+
+                .urlpool {
+                    margin-top: 5% !important;
+                }
             }
 
             width: 100%;
-            height: 70vh;
-            padding-top: 8%;
-            // transform: skewY(7deg);
+            padding: 8% 0 5% 0;
+            background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
+            background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
+            background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
 
             .container {
                 .contactme {
                     border-radius: 10px;
-                    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-                    background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-                    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-                    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
                     text-align: center;
+                    background-color: rgba(40, 81, 130, 0.07);
+                    padding: 3%;
 
                     h1 {
                         font-weight: bold;
@@ -813,17 +827,28 @@ html {
                         -webkit-text-fill-color: transparent;
                     }
 
-                    img {
-                        width: 50px;
-                        height: 50px;
+                    .iconpool {
+                        display: grid;
+
+
+                        .icon {
+                            display: inline-flex;
+                            float: left;
+
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
                     }
 
-                    .url {
-                        // width: 50px;
-                        height: 50px;
+                    .urlpool {
+                        margin-top: 3px;
+
+                        .url {
+                            height: 50px;
+                        }
                     }
-
-
                 }
             }
         }

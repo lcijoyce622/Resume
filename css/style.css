@@ -18,27 +18,25 @@ html body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
-html body section {
-  -webkit-animation: showpage 2.5s alternate ease-in forwards;
-          animation: showpage 2.5s alternate ease-in forwards;
-}
-
-@-webkit-keyframes showpage {
-  0% {
-    z-index: -20;
-  }
-  100% {
-    z-index: 20;
+@media (max-width: 991.98px) {
+  html body #backtotop {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
   }
 }
 
-@keyframes showpage {
-  0% {
-    z-index: -20;
-  }
-  100% {
-    z-index: 20;
-  }
+html body #backtotop {
+  display: none;
+  position: fixed;
+  top: 90%;
+  right: 0%;
+  z-index: 80;
+}
+
+html body #backtotop img {
+  opacity: 0.3;
+  width: 50px;
 }
 
 html body .pre-loading {
@@ -243,9 +241,6 @@ html body #homepage {
   html body #homepage {
     padding-top: 30%;
   }
-  html body #homepage .bg {
-    top: 0%;
-  }
 }
 
 html body #homepage .bg {
@@ -253,6 +248,7 @@ html body #homepage .bg {
   height: 100%;
   background: linear-gradient(220deg, #fffffd, #9bddfc8f);
   position: absolute;
+  top: 0;
 }
 
 html body #homepage .ani {
@@ -366,7 +362,6 @@ html body #intropage:hover .ball {
   -webkit-animation: slide 2s;
           animation: slide 2s;
   opacity: 0.2;
-  animation: slide 2s;
 }
 
 @-webkit-keyframes slide {
@@ -472,6 +467,25 @@ html body #intropage {
   html body #intropage {
     padding-top: 20%;
   }
+  html body #intropage .about-context {
+    margin-top: 0%;
+  }
+  html body #intropage .avatarfr {
+    padding: 30px;
+    margin: 50px;
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+  html body #intropage .avatarfr img {
+    border-radius: 10%;
+  }
+  html body #intropage .avatarfr:hover {
+    -webkit-transition: none;
+    transition: none;
+  }
+  html body #intropage .avatarfr:hover img {
+    border-radius: 10%;
+  }
 }
 
 html body #intropage .ball {
@@ -549,36 +563,11 @@ html body #intropage .aboutme .avatarbox .avatarfr:hover img {
   transition: ease-in 0.2s;
 }
 
-@media (max-width: 991.98px) {
-  html body #intropage .aboutme .avatarbox .avatarfr {
-    padding: 30px;
-    margin: 50px;
-    -webkit-filter: grayscale(0%);
-            filter: grayscale(0%);
-  }
-  html body #intropage .aboutme .avatarbox .avatarfr img {
-    border-radius: 10%;
-  }
-  html body #intropage .aboutme .avatarbox .avatarfr:hover {
-    -webkit-transition: none;
-    transition: none;
-  }
-  html body #intropage .aboutme .avatarbox .avatarfr:hover img {
-    border-radius: 10%;
-  }
-}
-
 html body #intropage .aboutme .about-context {
   margin-top: 20%;
   text-align: left;
   width: 100%;
   line-height: 40px;
-}
-
-@media (max-width: 991.98px) {
-  html body #intropage .aboutme .about-context {
-    margin-top: 0%;
-  }
 }
 
 html body #skills {
@@ -850,21 +839,36 @@ html body #portfolio .container .cover:hover .url:hover {
 
 html body #contact {
   width: 100%;
-  height: 70vh;
-  padding-top: 8%;
+  padding: 8% 0 5% 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#9bddfc8f));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #9bddfc8f);
 }
 
 @media (max-width: 991.98px) {
   html body #contact {
     padding-top: 20%;
   }
+  html body #contact .iconpool {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-flow: column;
+  }
+  html body #contact .iconpool a {
+    margin: auto;
+  }
+  html body #contact .iconpool a p {
+    display: none;
+  }
+  html body #contact .urlpool {
+    margin-top: 5% !important;
+  }
 }
 
 html body #contact .container .contactme {
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#9bddfc8f));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #9bddfc8f);
   text-align: center;
+  background-color: rgba(40, 81, 130, 0.07);
+  padding: 3%;
 }
 
 html body #contact .container .contactme h1 {
@@ -877,12 +881,28 @@ html body #contact .container .contactme h1 {
   -webkit-text-fill-color: transparent;
 }
 
-html body #contact .container .contactme img {
+html body #contact .container .contactme .iconpool {
+  display: -ms-grid;
+  display: grid;
+}
+
+html body #contact .container .contactme .iconpool .icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  float: left;
+}
+
+html body #contact .container .contactme .iconpool .icon img {
   width: 50px;
   height: 50px;
 }
 
-html body #contact .container .contactme .url {
+html body #contact .container .contactme .urlpool {
+  margin-top: 3px;
+}
+
+html body #contact .container .contactme .urlpool .url {
   height: 50px;
 }
 /*# sourceMappingURL=style.css.map */

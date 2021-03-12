@@ -56,18 +56,16 @@ function collapse() {
     else if ($(window).width() < 991.98) {
         $('.collapse').removeClass('show');
         $('.card').unbind("click");
-        // $('.card').click(function () {
-        //     if ($(this).find('.collapse').hasClass('show')) {
-        //         var index = $(this).index();
-        //         $(this).find('.collapse').collapse('hide');
-        //         console.log(777)
-        //     }
-        //     else {
-        //         var index = $(this).index();
-        //         $(this).find('.collapse').collapse('show');;
-        //         console.log(6666)
-        //     }
-        // });
     }
 }
 
+
+var mybutton = document.getElementById("backtotop");
+window.onscroll = function () { scrollFunction(); }
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
