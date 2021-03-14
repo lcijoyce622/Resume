@@ -955,11 +955,10 @@ html {
                         left: 50%;
                         transform: translate(-50%, -50%);
                         background-color: $color4;
-                        background: -webkit-linear-gradient($color4);
-                        background: -o-linear-gradient($color4);
-                        background: -moz-linear-gradient($color4);
-                        background: linear-gradient($color4);
-
+                        background: -webkit-linear-gradient(0,$color4);
+                        background: -o-linear-gradient(0,$color4);
+                        background: -moz-linear-gradient(0,$color4);
+                        background: linear-gradient(0,$color4);
                         color: rgb(99, 99, 99);
                         border: 2px dashed rgb(126, 145, 204);
 
