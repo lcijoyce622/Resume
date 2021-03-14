@@ -577,6 +577,154 @@ html body #intropage .aboutme .about-context {
   line-height: 40px;
 }
 
+html body #experience {
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+  background-color: #ffffff;
+  color: #636363;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  html body #experience div {
+    width: unset !important;
+    margin: auto !important;
+  }
+  html body #experience div ul li::before {
+    left: 0%;
+  }
+  html body #experience div ul li::after {
+    left: 0%;
+  }
+  html body #experience div:nth-child(even) div {
+    left: 10% !important;
+  }
+}
+
+html body #experience h1 {
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
+  background-image: linear-gradient(to right, #dadcf5, #292b7e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 3%;
+}
+
+html body #experience ul {
+  padding: 50px 0;
+}
+
+html body #experience ul li:hover div {
+  background-color: #fef5d4;
+}
+
+html body #experience ul li:hover div time {
+  background-color: #aeddef;
+  color: white;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+html body #experience ul li:hover::after {
+  background: #fed6aa;
+  border-radius: 50%;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+html body #experience ul li {
+  position: relative;
+  list-style-type: none;
+  margin: 0 auto;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+html body #experience ul li::before {
+  content: ' ';
+  background-color: #636363;
+  width: 6px;
+  height: 1000px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+  position: absolute;
+}
+
+html body #experience ul li::after {
+  background: #eec8dd;
+  content: '';
+  width: 25px;
+  height: 25px;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 0;
+}
+
+html body #experience ul li div {
+  margin: 0;
+  position: relative;
+  width: 35rem;
+  padding: 15px;
+  border-radius: 5px;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+html body #experience ul li div time {
+  background-color: #fef5d4;
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+html body #experience ul li div h5 {
+  text-align: left;
+  font-weight: bold;
+  margin: 5% 0;
+}
+
+html body #experience ul li div p {
+  text-align: left;
+}
+
+html body #experience ul li:nth-child(odd) div {
+  left: 55%;
+  -webkit-transform: translate3d(200px, 0, 0);
+          transform: translate3d(200px, 0, 0);
+}
+
+html body #experience ul li:nth-child(even) div {
+  -webkit-transform: translate3d(-200px, 0, 0);
+          transform: translate3d(-200px, 0, 0);
+  left: -5%;
+}
+
+html body #experience ul li.show div {
+  -webkit-transform: none;
+          transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+html body #experience time {
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 html body #skills {
   width: 100%;
   padding-bottom: 5%;

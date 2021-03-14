@@ -482,7 +482,6 @@ html {
                     position: absolute;
                     bottom: 18%;
                     right: 3%;
-
                     z-index: 20;
                     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
                     transform: translate(-50px, 10px) skew(10deg, 10deg) rotate(-50deg);
@@ -519,6 +518,165 @@ html {
                     line-height: 40px;
                 }
             }
+        }
+
+        #experience {
+            font-family: $fontfamily;
+            letter-spacing: 2px;
+
+            @media (max-width: 991.98px) {
+                div {
+                    width: unset !important;
+                    margin: auto !important;
+
+                    ul {
+                        li {
+                            &::before {
+                                left: 0%;
+                            }
+
+                            &::after {
+                                left: 0%;
+                            }
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        div {
+                            left: 10% !important;
+                        }
+                    }
+                }
+            }
+
+            background-color: #ffffff;
+            color: #636363;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+
+            h1 {
+                font-weight: bold;
+                background-image: $fontbg1;
+                -webkit-background-clip: text;
+                -o-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                letter-spacing: 2px;
+                -webkit-text-fill-color: transparent;
+                margin-bottom: 3%;
+            }
+
+            ul {
+                padding: 50px 0;
+
+                li:hover {
+                    div{
+                        background-color: $color1;
+                        time {
+                            background-color: $color5;
+                            color: white;
+                            transition: .3s ease-in;
+                        }
+                    }
+
+                    &::after {
+                        background: $color2;
+                        border-radius: 50%;
+                        transition: .3s ease-in;
+                    }
+                }
+
+                li {
+                    position: relative;
+                    list-style-type: none;
+                    margin: 0 auto;
+                    transition: .3s ease-in;
+                    &::before {
+                        content: ' ';
+                        background-color: #636363;
+                        width: 6px;
+                        height: 1000px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 0;
+                        position: absolute;
+                    }
+
+                    &::after {
+                        background: $color3;
+                        content: '';
+                        width: 25px;
+                        height: 25px;
+                        transition: .3s ease-in;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top: 0;
+                    }
+
+
+
+                    div {
+                        margin: 0;
+
+                        time {
+                            background-color: $color1;
+                            transition: .3s ease-in;
+                        }
+
+                        position: relative;
+                        width: 35rem;
+                        padding: 15px;
+                        border-radius: 5px;
+                        bottom: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all .5s ease-in-out;
+
+                        h5 {
+                            text-align: left;
+                            font-weight: bold;
+                            margin: 5% 0;
+                        }
+
+                        p {
+                            text-align: left;
+                        }
+                    }
+
+                    &:nth-child(odd) {
+                        div {
+                            left: 55%;
+                            transform: translate3d(200px, 0, 0);
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        div {
+                            transform: translate3d(-200px, 0, 0);
+                            left: -5%;
+                        }
+                    }
+
+                    &.show {
+                        div {
+                            transform: none;
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            time {
+                font-weight: bold;
+                font-size: 18px;
+                display: block;
+                margin-bottom: 10px;
+            }
+
+
         }
 
         #skills {
