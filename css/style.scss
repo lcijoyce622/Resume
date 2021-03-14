@@ -523,7 +523,7 @@ html {
         #experience {
             font-family: $fontfamily;
             letter-spacing: 2px;
-
+            margin-top: 5%;
             @media (max-width: 991.98px) {
                 div {
                     width: unset !important;
@@ -531,14 +531,16 @@ html {
 
                     ul {
                         li:hover {
-                            div{
+                            div {
                                 background-color: unset;
+
                                 time {
                                     background-color: $color1;
-                                    color:#636363;
-                                    transition:unset;
+                                    color: #636363;
+                                    transition: unset;
                                 }
                             }
+
                             &::after {
                                 background: $color3;
                                 // background:unset;
@@ -546,7 +548,7 @@ html {
                                 transition: unset;
                             }
                         }
-        
+
                         li {
                             &::before {
                                 left: 0%;
@@ -568,7 +570,6 @@ html {
 
             background-color: #ffffff;
             color: #636363;
-            margin: 0;
             overflow: hidden;
             text-align: center;
 
@@ -581,15 +582,16 @@ html {
                 background-clip: text;
                 letter-spacing: 2px;
                 -webkit-text-fill-color: transparent;
-                margin-bottom: 3%;
+                margin-bottom: 1%;
             }
 
             ul {
                 padding: 50px 0 0 0;
 
                 li:hover {
-                    div{
+                    div {
                         background-color: #fef5d49f;
+
                         time {
                             background-color: $color3;
                             color: white;
@@ -609,6 +611,7 @@ html {
                     list-style-type: none;
                     margin: 0 auto;
                     transition: .3s ease-in;
+
                     &::before {
                         content: ' ';
                         background-color: #636363;

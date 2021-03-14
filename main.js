@@ -59,7 +59,7 @@ function collapse() {
     }
 }
 
-
+//--------------回首頁--------------//
 var mybutton = document.getElementById("backtotop");
 window.onscroll = function () { scrollFunction(); }
 function scrollFunction() {
@@ -69,7 +69,7 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
-
+//--------------experience page----------------//
 var items = document.querySelectorAll("li");
 
 function isItemInView(item){
