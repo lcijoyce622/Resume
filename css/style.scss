@@ -572,9 +572,10 @@ html {
 
                 li:hover {
                     div{
-                        background-color: $color1;
+                        background-color: #fef5d49f;
+                        
                         time {
-                            background-color: $color5;
+                            background-color: $color3;
                             color: white;
                             transition: .3s ease-in;
                         }

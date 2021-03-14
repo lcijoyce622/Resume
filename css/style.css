@@ -619,11 +619,11 @@ html body #experience ul {
 }
 
 html body #experience ul li:hover div {
-  background-color: #fef5d4;
+  background-color: #fef5d49f;
 }
 
 html body #experience ul li:hover div time {
-  background-color: #aeddef;
+  background-color: #eec8dd;
   color: white;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
