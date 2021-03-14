@@ -592,6 +592,21 @@ html body #experience {
     width: unset !important;
     margin: auto !important;
   }
+  html body #experience div ul li:hover div {
+    background-color: unset;
+  }
+  html body #experience div ul li:hover div time {
+    background-color: #fef5d4;
+    color: #636363;
+    -webkit-transition: unset;
+    transition: unset;
+  }
+  html body #experience div ul li:hover::after {
+    background: #eec8dd;
+    border-radius: 0%;
+    -webkit-transition: unset;
+    transition: unset;
+  }
   html body #experience div ul li::before {
     left: 0%;
   }
@@ -615,7 +630,7 @@ html body #experience h1 {
 }
 
 html body #experience ul {
-  padding: 50px 0;
+  padding: 50px 0 0 0;
 }
 
 html body #experience ul li:hover div {

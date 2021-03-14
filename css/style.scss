@@ -530,6 +530,23 @@ html {
                     margin: auto !important;
 
                     ul {
+                        li:hover {
+                            div{
+                                background-color: unset;
+                                time {
+                                    background-color: $color1;
+                                    color:#636363;
+                                    transition:unset;
+                                }
+                            }
+                            &::after {
+                                background: $color3;
+                                // background:unset;
+                                border-radius: 0%;
+                                transition: unset;
+                            }
+                        }
+        
                         li {
                             &::before {
                                 left: 0%;
@@ -568,12 +585,11 @@ html {
             }
 
             ul {
-                padding: 50px 0;
+                padding: 50px 0 0 0;
 
                 li:hover {
                     div{
                         background-color: #fef5d49f;
-                        
                         time {
                             background-color: $color3;
                             color: white;
