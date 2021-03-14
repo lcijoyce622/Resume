@@ -834,6 +834,8 @@ html body #portfolio .container .cover:hover .url {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #eaeaff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaeaff));
+  background: linear-gradient(#eaeaff);
   color: #636363;
   border: 2px dashed #7e91cc;
 }
