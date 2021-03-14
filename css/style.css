@@ -614,7 +614,7 @@ html body #experience {
     left: 0%;
   }
   html body #experience div:nth-child(even) div {
-    left: 10% !important;
+    left: 3% !important;
   }
 }
 
