@@ -1,13 +1,13 @@
-$color1: #fef5d4;
-$color2: #fed6aa;
-$color3: #eec8dd;
-$color4: #eaeaff;
-$color5: #aeddef;
-$colorbg1:#efbad6bb;
-$colorbg2: #9bddfc8f;
+$color1: #e2d5d5;
+$color2: #bbbbbb;
+$color3: #8e7f7f;
+$color4: #865858;
+// $color5: #aeddef;
+$colorbg1:#fef5d4c9;
+$colorbg2: #e2d5d5c0;
 $fontfamily: 'Noto Sans TC',
 sans-serif;
-$fontbg1:linear-gradient(to right, rgb(218, 220, 245), rgb(41, 43, 126));
+$fontbg1:linear-gradient(to top, rgb(165, 71, 42), rgb(245, 164, 168));
 
 
 html {
@@ -54,7 +54,7 @@ html {
         .pre-loading {
             width: 100vw;
             height: 100vh;
-            background-color: $color4;
+            background-color: $color1;
             z-index: 10;
             position: fixed;
             top: 0;
@@ -256,7 +256,7 @@ html {
                         margin-left: -5%;
                         animation: bounceInRight;
                         animation-duration: 2s;
-                        border: 1px solid white;
+                        border: 2px solid #808080;
                         position: relative;
                         overflow: hidden;
                         display: inline-block;
@@ -294,16 +294,13 @@ html {
 
                     .aboutbtn:hover {
                         color: #fff;
+                        border-color: #fff;
 
                         &:before {
                             width: 100%;
                         }
                     }
-
-
-
                 }
-
             }
         }
 
@@ -311,7 +308,7 @@ html {
 
         #intropage:hover {
             .ball {
-                background-color: $color3;
+                background-color: $color1;
                 top: 10%;
                 border-radius: 50%;
                 height: 400px;
@@ -516,6 +513,7 @@ html {
                     text-align: left;
                     width: 100%;
                     line-height: 40px;
+                    font-size: large;
                 }
             }
         }
@@ -524,6 +522,7 @@ html {
             font-family: $fontfamily;
             letter-spacing: 2px;
             margin-top: 5%;
+
             @media (max-width: 991.98px) {
                 div {
                     width: unset !important;
@@ -533,10 +532,11 @@ html {
                         li:hover {
                             div {
                                 background-color: unset;
+                                outline: none;
 
                                 time {
                                     background-color: $color1;
-                                    color: #636363;
+                                    color: #4d4d4d;
                                     transition: unset;
                                 }
                             }
@@ -591,6 +591,7 @@ html {
                 li:hover {
                     div {
                         background-color: #fef5d49f;
+                        outline: $color4 dashed 3px;
 
                         time {
                             background-color: $color3;
@@ -600,7 +601,9 @@ html {
                     }
 
                     &::after {
-                        background: $color2;
+                        width: 30px;
+                        height: 30px;
+                        background: rgb(255, 151, 168);
                         border-radius: 50%;
                         transition: .3s ease-in;
                     }
@@ -616,7 +619,7 @@ html {
                         content: ' ';
                         background-color: #636363;
                         width: 6px;
-                        height: 1000px;
+                        height: 100%;
                         left: 50%;
                         transform: translateX(-50%);
                         top: 0;
@@ -702,6 +705,7 @@ html {
         #skills {
             width: 100%;
             padding-bottom: 5%;
+            margin-bottom: 10%;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -733,10 +737,10 @@ html {
 
                     .card {
                         border: 2px dashed $color4;
-                        background: -webkit-linear-gradient(220deg, $color3, white, $color4);
-                        background: -o-linear-gradient(220deg, $color3, white, $color4);
-                        background: -moz-linear-gradient(220deg, $color3, white, $color4);
-                        background: linear-gradient(220deg, $color3, white, $color4);
+                        background: -webkit-linear-gradient(220deg, $color1, white, $color1);
+                        background: -o-linear-gradient(220deg, $color1, white, $color1);
+                        background: -moz-linear-gradient(220deg, $color1, white, $color1);
+                        background: linear-gradient(220deg, $color1, white, $color1);
                         margin: 10px;
                         padding: 5%; //要置中
                         width: 100%;
@@ -762,7 +766,7 @@ html {
 
                         .card-title {
                             font-weight: bold;
-                            color: rgb(160, 149, 170);
+                            color: $color4;
                         }
 
                         .card-title,
@@ -772,6 +776,7 @@ html {
                             left: 50%;
                             transform: translate(-50%, -50%);
                             white-space: nowrap;
+                            color: $color4;
                         }
                     }
 
@@ -829,7 +834,11 @@ html {
 
         #portfolio {
             @media (max-width: 991.98px) {
-                padding-top: 20%;
+
+                // padding-top: 20%;
+                h1 {
+                    top: -5% !important;
+                }
 
                 .bg {
                     top: 0%;
@@ -846,6 +855,22 @@ html {
             background-position: center;
             background-image: url('../img/img3');
 
+            h1 {
+                z-index: 20;
+                position: absolute;
+                top: -10%;
+                left: 50%;
+                transform: translate(-50%, -50%) skewY(7deg);
+                font-weight: bold;
+                background-image: $fontbg1;
+                -webkit-background-clip: text;
+                -o-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                letter-spacing: 2px;
+                -webkit-text-fill-color: transparent;
+            }
+
             .bg {
                 background: -webkit-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
                 background: -o-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
@@ -859,17 +884,17 @@ html {
 
             .container {
                 transform: skewY(7deg);
-                padding-top: 4%;
 
-                h1 {
-                    font-weight: bold;
-                    background-image: $fontbg1;
-                    -webkit-background-clip: text;
-                    -o-background-clip: text;
-                    -moz-background-clip: text;
-                    background-clip: text;
-                    letter-spacing: 2px;
-                    -webkit-text-fill-color: transparent;
+                .p-cat {
+                    .bg {
+                        background-image: url('../img/石虎網站擷取.svg');
+                    }
+                }
+
+                .p-resume {
+                    .bg {
+                        background-image: url('../img/履歷網站擷取.svg');
+                    }
                 }
 
                 .p-cat,
@@ -878,33 +903,26 @@ html {
                     padding-bottom: 80%;
                     border-radius: 50%;
                     margin: 10%;
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    overflow: hidden;
-                    border: 5px dashed rgb(126, 145, 204);
-
+                    border: 5px dashed $color4;
+                    .bg {
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        overflow: hidden;
+                        border-radius: 50%;
+                    }
                 }
-
                 .p-cat:hover,
                 .p-resume:hover {
                     transform: scale(1.1);
-                    // opacity: 0.5;
                     overflow: hidden;
                     z-index: 20;
-                    border: none;
+                    box-shadow: 0 5px 30px $color3;
 
-                    box-shadow: 0 5px 30px gray;
+                    .bg-blur {
+                        filter: blur(2px);
+                    }
                 }
-
-                .p-cat {
-                    background-image: url('../img/石虎網站擷取.svg');
-                }
-
-                .p-resume {
-                    background-image: url('../img/履歷網站擷取.svg');
-                }
-
                 .cover {
                     opacity: 0.2;
                     width: 100%;
@@ -912,9 +930,9 @@ html {
                     border-radius: 50%;
                     left: 0;
                     position: absolute;
-                    background: linear-gradient(180deg, $colorbg1, rgba(255, 255, 253, 0.8), $color4);
+                    background: linear-gradient(180deg, $colorbg2, rgba(255, 255, 253, 0.8), $colorbg1);
 
-                    h1 {
+                    h2 {
                         opacity: 0;
                         position: absolute;
                         top: 0%;
@@ -922,6 +940,11 @@ html {
                         transform: translate(-50%, -50%);
                         transition: ease-in 0.5s;
                         white-space: nowrap;
+                        color: $color4;
+                        background-image: none;
+                        -webkit-text-fill-color: unset;
+                        font-weight: bold;
+                        // letter-spacing: 10px;
                     }
 
                     .url {
@@ -930,7 +953,15 @@ html {
                         top: 100%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        transition: ease-in 0.5s;
+                        transition: ease-in 0.2s;
+                        background-color: $color1;
+                        background: -webkit-linear-gradient(0, $color1);
+                        background: -o-linear-gradient(0, $color1);
+                        background: -moz-linear-gradient(0, $color1);
+                        background: linear-gradient(0, $color1);
+                        color: $color4;
+                        border: 2px dashed $color4;
+
                     }
                 }
 
@@ -938,33 +969,20 @@ html {
                     opacity: 1;
                     transition: ease-in 0.5s;
 
-                    h1 {
+                    h2 {
                         opacity: 1;
-                        top: 40%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                        color: rgb(99, 99, 99);
-                        background-image: none;
-                        -webkit-text-fill-color: unset;
-                        font-weight: normal;
+                        top: 35% !important;
+                        left: 50% !important;  
                     }
 
                     .url {
                         opacity: 1;
                         top: 60%;
                         left: 50%;
-                        transform: translate(-50%, -50%);
-                        background-color: $color4;
-                        background: -webkit-linear-gradient(0,$color4);
-                        background: -o-linear-gradient(0,$color4);
-                        background: -moz-linear-gradient(0,$color4);
-                        background: linear-gradient(0,$color4);
-                        color: rgb(99, 99, 99);
-                        border: 2px dashed rgb(126, 145, 204);
-
+   
                         &:hover {
                             color: white;
-                            background-color: #87799c;
+                            background-color: $color4;
                             border: 2px dashed rgb(255, 255, 255);
                         }
                     }
@@ -1005,7 +1023,7 @@ html {
                 .contactme {
                     border-radius: 10px;
                     text-align: center;
-                    background-color: rgba(40, 81, 130, 0.07);
+                    background-color: $colorbg2;
                     padding: 3%;
 
                     h1 {
@@ -1039,6 +1057,10 @@ html {
 
                         .url {
                             height: 50px;
+
+                            a {
+                                color: #636363;
+                            }
                         }
                     }
                 }

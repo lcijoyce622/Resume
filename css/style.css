@@ -46,7 +46,7 @@ html body #backtotop img {
 html body .pre-loading {
   width: 100vw;
   height: 100vh;
-  background-color: #eaeaff;
+  background-color: #e2d5d5;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -250,7 +250,7 @@ html body #homepage {
 html body #homepage .bg {
   width: 100%;
   height: 100%;
-  background: linear-gradient(220deg, #fffffd, #9bddfc8f);
+  background: linear-gradient(220deg, #fffffd, #e2d5d5c0);
   position: absolute;
   top: 0;
 }
@@ -313,7 +313,7 @@ html body #homepage .ani .intro .aboutbtn {
           animation: bounceInRight;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  border: 1px solid white;
+  border: 2px solid #808080;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -330,7 +330,7 @@ html body #homepage .ani .intro .aboutbtn:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #9bddfc8f;
+  background-color: #e2d5d5c0;
   border-radius: 10rem;
   z-index: -2;
 }
@@ -342,7 +342,7 @@ html body #homepage .ani .intro .aboutbtn:before {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #eec8dd;
+  background-color: #8e7f7f;
   -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 10rem;
@@ -351,6 +351,7 @@ html body #homepage .ani .intro .aboutbtn:before {
 
 html body #homepage .ani .intro .aboutbtn:hover {
   color: #fff;
+  border-color: #fff;
 }
 
 html body #homepage .ani .intro .aboutbtn:hover:before {
@@ -358,7 +359,7 @@ html body #homepage .ani .intro .aboutbtn:hover:before {
 }
 
 html body #intropage:hover .ball {
-  background-color: #eec8dd;
+  background-color: #e2d5d5;
   top: 10%;
   border-radius: 50%;
   height: 400px;
@@ -460,7 +461,7 @@ html body #intropage {
   width: 100%;
   padding-top: 5%;
   margin: 2rem 0 1rem 0;
-  background: linear-gradient(20deg, rgba(255, 255, 255, 0.25), #efbad6bb);
+  background: linear-gradient(20deg, rgba(255, 255, 255, 0.25), #fef5d4c9);
   text-align: center;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
@@ -508,8 +509,8 @@ html body #intropage .aboutme {
 
 html body #intropage .aboutme h1 {
   font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
-  background-image: linear-gradient(to right, #dadcf5, #292b7e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a5472a), to(#f5a4a8));
+  background-image: linear-gradient(to top, #a5472a, #f5a4a8);
   -webkit-background-clip: text;
   background-clip: text;
   letter-spacing: 2px;
@@ -575,6 +576,7 @@ html body #intropage .aboutme .about-context {
   text-align: left;
   width: 100%;
   line-height: 40px;
+  font-size: large;
 }
 
 html body #experience {
@@ -594,15 +596,16 @@ html body #experience {
   }
   html body #experience div ul li:hover div {
     background-color: unset;
+    outline: none;
   }
   html body #experience div ul li:hover div time {
-    background-color: #fef5d4;
-    color: #636363;
+    background-color: #e2d5d5;
+    color: #4d4d4d;
     -webkit-transition: unset;
     transition: unset;
   }
   html body #experience div ul li:hover::after {
-    background: #eec8dd;
+    background: #8e7f7f;
     border-radius: 0%;
     -webkit-transition: unset;
     transition: unset;
@@ -620,8 +623,8 @@ html body #experience {
 
 html body #experience h1 {
   font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
-  background-image: linear-gradient(to right, #dadcf5, #292b7e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a5472a), to(#f5a4a8));
+  background-image: linear-gradient(to top, #a5472a, #f5a4a8);
   -webkit-background-clip: text;
   background-clip: text;
   letter-spacing: 2px;
@@ -635,17 +638,20 @@ html body #experience ul {
 
 html body #experience ul li:hover div {
   background-color: #fef5d49f;
+  outline: #865858 dashed 3px;
 }
 
 html body #experience ul li:hover div time {
-  background-color: #eec8dd;
+  background-color: #8e7f7f;
   color: white;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
 }
 
 html body #experience ul li:hover::after {
-  background: #fed6aa;
+  width: 30px;
+  height: 30px;
+  background: #ff97a8;
   border-radius: 50%;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
@@ -663,7 +669,7 @@ html body #experience ul li::before {
   content: ' ';
   background-color: #636363;
   width: 6px;
-  height: 1000px;
+  height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -672,7 +678,7 @@ html body #experience ul li::before {
 }
 
 html body #experience ul li::after {
-  background: #eec8dd;
+  background: #8e7f7f;
   content: '';
   width: 25px;
   height: 25px;
@@ -699,7 +705,7 @@ html body #experience ul li div {
 }
 
 html body #experience ul li div time {
-  background-color: #fef5d4;
+  background-color: #e2d5d5;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
 }
@@ -743,6 +749,7 @@ html body #experience time {
 html body #skills {
   width: 100%;
   padding-bottom: 5%;
+  margin-bottom: 10%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -761,8 +768,8 @@ html body #skills .container {
 
 html body #skills .container h1 {
   font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
-  background-image: linear-gradient(to right, #dadcf5, #292b7e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a5472a), to(#f5a4a8));
+  background-image: linear-gradient(to top, #a5472a, #f5a4a8);
   -webkit-background-clip: text;
   background-clip: text;
   letter-spacing: 2px;
@@ -776,8 +783,8 @@ html body #skills .container .cardpool {
 }
 
 html body #skills .container .cardpool .card {
-  border: 2px dashed #eaeaff;
-  background: linear-gradient(220deg, #eec8dd, white, #eaeaff);
+  border: 2px dashed #865858;
+  background: linear-gradient(220deg, #e2d5d5, white, #e2d5d5);
   margin: 10px;
   padding: 5%;
   width: 100%;
@@ -806,7 +813,7 @@ html body #skills .container .cardpool .back {
 html body #skills .container .cardpool .front .card-title,
 html body #skills .container .cardpool .back .card-title {
   font-weight: bold;
-  color: #a095aa;
+  color: #865858;
 }
 
 html body #skills .container .cardpool .front .card-title,
@@ -819,6 +826,7 @@ html body #skills .container .cardpool .back .card-text {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   white-space: nowrap;
+  color: #865858;
 }
 
 html body #skills .container .cardpool .back {
@@ -875,16 +883,32 @@ html body #portfolio {
 }
 
 @media (max-width: 991.98px) {
-  html body #portfolio {
-    padding-top: 20%;
+  html body #portfolio h1 {
+    top: -5% !important;
   }
   html body #portfolio .bg {
     top: 0%;
   }
 }
 
+html body #portfolio h1 {
+  z-index: 20;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) skewY(7deg);
+          transform: translate(-50%, -50%) skewY(7deg);
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a5472a), to(#f5a4a8));
+  background-image: linear-gradient(to top, #a5472a, #f5a4a8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 2px;
+  -webkit-text-fill-color: transparent;
+}
+
 html body #portfolio .bg {
-  background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), #efbad6bb);
+  background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), #fef5d4c9);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -893,17 +917,14 @@ html body #portfolio .bg {
 html body #portfolio .container {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
-  padding-top: 4%;
 }
 
-html body #portfolio .container h1 {
-  font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
-  background-image: linear-gradient(to right, #dadcf5, #292b7e);
-  -webkit-background-clip: text;
-  background-clip: text;
-  letter-spacing: 2px;
-  -webkit-text-fill-color: transparent;
+html body #portfolio .container .p-cat .bg {
+  background-image: url("../img/石虎網站擷取.svg");
+}
+
+html body #portfolio .container .p-resume .bg {
+  background-image: url("../img/履歷網站擷取.svg");
 }
 
 html body #portfolio .container .p-cat,
@@ -912,11 +933,16 @@ html body #portfolio .container .p-resume {
   padding-bottom: 80%;
   border-radius: 50%;
   margin: 10%;
+  border: 5px dashed #865858;
+}
+
+html body #portfolio .container .p-cat .bg,
+html body #portfolio .container .p-resume .bg {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-  border: 5px dashed #7e91cc;
+  border-radius: 50%;
 }
 
 html body #portfolio .container .p-cat:hover,
@@ -925,17 +951,14 @@ html body #portfolio .container .p-resume:hover {
           transform: scale(1.1);
   overflow: hidden;
   z-index: 20;
-  border: none;
-  -webkit-box-shadow: 0 5px 30px gray;
-          box-shadow: 0 5px 30px gray;
+  -webkit-box-shadow: 0 5px 30px #8e7f7f;
+          box-shadow: 0 5px 30px #8e7f7f;
 }
 
-html body #portfolio .container .p-cat {
-  background-image: url("../img/石虎網站擷取.svg");
-}
-
-html body #portfolio .container .p-resume {
-  background-image: url("../img/履歷網站擷取.svg");
+html body #portfolio .container .p-cat:hover .bg-blur,
+html body #portfolio .container .p-resume:hover .bg-blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
 }
 
 html body #portfolio .container .cover {
@@ -945,11 +968,11 @@ html body #portfolio .container .cover {
   border-radius: 50%;
   left: 0;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(#efbad6bb), color-stop(rgba(255, 255, 253, 0.8)), to(#eaeaff));
-  background: linear-gradient(180deg, #efbad6bb, rgba(255, 255, 253, 0.8), #eaeaff);
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2d5d5c0), color-stop(rgba(255, 255, 253, 0.8)), to(#fef5d4c9));
+  background: linear-gradient(180deg, #e2d5d5c0, rgba(255, 255, 253, 0.8), #fef5d4c9);
 }
 
-html body #portfolio .container .cover h1 {
+html body #portfolio .container .cover h2 {
   opacity: 0;
   position: absolute;
   top: 0%;
@@ -959,6 +982,10 @@ html body #portfolio .container .cover h1 {
   -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
   white-space: nowrap;
+  color: #865858;
+  background-image: none;
+  -webkit-text-fill-color: unset;
+  font-weight: bold;
 }
 
 html body #portfolio .container .cover .url {
@@ -968,8 +995,13 @@ html body #portfolio .container .cover .url {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-transition: ease-in 0.5s;
-  transition: ease-in 0.5s;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  background-color: #e2d5d5;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), to(#e2d5d5));
+  background: linear-gradient(0, #e2d5d5);
+  color: #865858;
+  border: 2px dashed #865858;
 }
 
 html body #portfolio .container .cover:hover {
@@ -978,42 +1010,29 @@ html body #portfolio .container .cover:hover {
   transition: ease-in 0.5s;
 }
 
-html body #portfolio .container .cover:hover h1 {
+html body #portfolio .container .cover:hover h2 {
   opacity: 1;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  color: #636363;
-  background-image: none;
-  -webkit-text-fill-color: unset;
-  font-weight: normal;
+  top: 35% !important;
+  left: 50% !important;
 }
 
 html body #portfolio .container .cover:hover .url {
   opacity: 1;
   top: 60%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #eaeaff;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), to(#eaeaff));
-  background: linear-gradient(0, #eaeaff);
-  color: #636363;
-  border: 2px dashed #7e91cc;
 }
 
 html body #portfolio .container .cover:hover .url:hover {
   color: white;
-  background-color: #87799c;
+  background-color: #865858;
   border: 2px dashed white;
 }
 
 html body #contact {
   width: 100%;
   padding: 8% 0 5% 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#9bddfc8f));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #9bddfc8f);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#e2d5d5c0));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #e2d5d5c0);
 }
 
 @media (max-width: 991.98px) {
@@ -1039,14 +1058,14 @@ html body #contact {
 html body #contact .container .contactme {
   border-radius: 10px;
   text-align: center;
-  background-color: rgba(40, 81, 130, 0.07);
+  background-color: #e2d5d5c0;
   padding: 3%;
 }
 
 html body #contact .container .contactme h1 {
   font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, right top, from(#dadcf5), to(#292b7e));
-  background-image: linear-gradient(to right, #dadcf5, #292b7e);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#a5472a), to(#f5a4a8));
+  background-image: linear-gradient(to top, #a5472a, #f5a4a8);
   -webkit-background-clip: text;
   background-clip: text;
   letter-spacing: 2px;
@@ -1076,5 +1095,9 @@ html body #contact .container .contactme .urlpool {
 
 html body #contact .container .contactme .urlpool .url {
   height: 50px;
+}
+
+html body #contact .container .contactme .urlpool .url a {
+  color: #636363;
 }
 /*# sourceMappingURL=style.css.map */
