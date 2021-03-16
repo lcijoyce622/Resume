@@ -1,15 +1,22 @@
-$color1: #e2d5d5;
-$color2: #bbbbbb;
-$color3: #8e7f7f;
-$color4: #865858;
+// $color1: #e2d5d5;
+// $color2: #bbbbbb;
+// $color3: #8e7f7f;
+// $color4: #865858;
+// // $color5: #aeddef;
+// $colorbg1:#fef5d4c9;
+// $colorbg2: #e2d5d5c0;
+$color1: #fef5d4;
+$color2: #fed6aa;
+$color3: #eec8dd;
+$color4: #eaeaff;
 // $color5: #aeddef;
-$colorbg1:#fef5d4c9;
-$colorbg2: #e2d5d5c0;
+$color5: #A16B47;
+$colorbg1:#efbad6bb;
+// $colorbg3: #9bddfc8f;
+$colorbg3: #fef5d4bb;
 $fontfamily: 'Noto Sans TC',
 sans-serif;
 $fontbg1:linear-gradient(to top, rgb(165, 71, 42), rgb(245, 164, 168));
-
-
 html {
     margin: 0;
     scroll-behavior: smooth;
@@ -198,10 +205,10 @@ html {
             .bg {
                 width: 100%;
                 height: 100%;
-                background: -webkit-linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
-                background: -o-linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
-                background: -moz-linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
-                background: linear-gradient(220deg, rgb(255, 255, 253), $colorbg2);
+                background: -webkit-linear-gradient(220deg, rgb(255, 255, 253), $colorbg3);
+                background: -o-linear-gradient(220deg, rgb(255, 255, 253), $colorbg3);
+                background: -moz-linear-gradient(220deg, rgb(255, 255, 253), $colorbg3);
+                background: linear-gradient(220deg, rgb(255, 255, 253), $colorbg3);
                 position: absolute;
                 top: 0;
             }
@@ -273,7 +280,7 @@ html {
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        background-color: $colorbg2;
+                        background-color: $colorbg3;
                         border-radius: 10rem;
                         z-index: -2;
                     }
@@ -308,7 +315,7 @@ html {
 
         #intropage:hover {
             .ball {
-                background-color: $color1;
+                background-color: $color3;
                 top: 10%;
                 border-radius: 50%;
                 height: 400px;
@@ -522,44 +529,36 @@ html {
             font-family: $fontfamily;
             letter-spacing: 2px;
             margin-top: 5%;
-
             @media (max-width: 991.98px) {
                 div {
                     width: unset !important;
                     margin: auto !important;
-
                     ul {
                         li:hover {
                             div {
                                 background-color: unset;
                                 outline: none;
-
                                 time {
                                     background-color: $color1;
                                     color: #4d4d4d;
                                     transition: unset;
                                 }
                             }
-
                             &::after {
                                 background: $color3;
-                                // background:unset;
                                 border-radius: 0%;
                                 transition: unset;
                             }
                         }
-
                         li {
                             &::before {
                                 left: 0%;
                             }
-
                             &::after {
                                 left: 0%;
                             }
                         }
                     }
-
                     &:nth-child(even) {
                         div {
                             left: 3% !important;
@@ -594,7 +593,7 @@ html {
                         outline: $color4 dashed 3px;
 
                         time {
-                            background-color: $color3;
+                            background-color: $color5;
                             color: white;
                             transition: .3s ease-in;
                         }
@@ -603,7 +602,7 @@ html {
                     &::after {
                         width: 30px;
                         height: 30px;
-                        background: rgb(255, 151, 168);
+                        background: $color3;
                         border-radius: 50%;
                         transition: .3s ease-in;
                     }
@@ -627,7 +626,7 @@ html {
                     }
 
                     &::after {
-                        background: $color3;
+                        background: $color5;
                         content: '';
                         width: 25px;
                         height: 25px;
@@ -637,9 +636,6 @@ html {
                         transform: translateX(-50%);
                         top: 0;
                     }
-
-
-
                     div {
                         margin: 0;
 
@@ -736,7 +732,7 @@ html {
                     perspective: 700;
 
                     .card {
-                        border: 2px dashed $color4;
+                        border: 2px dashed $color5;
                         background: -webkit-linear-gradient(220deg, $color1, white, $color1);
                         background: -o-linear-gradient(220deg, $color1, white, $color1);
                         background: -moz-linear-gradient(220deg, $color1, white, $color1);
@@ -766,9 +762,8 @@ html {
 
                         .card-title {
                             font-weight: bold;
-                            color: $color4;
+                            
                         }
-
                         .card-title,
                         .card-text {
                             position: absolute;
@@ -776,7 +771,7 @@ html {
                             left: 50%;
                             transform: translate(-50%, -50%);
                             white-space: nowrap;
-                            color: $color4;
+                            color: $color5;
                         }
                     }
 
@@ -872,10 +867,10 @@ html {
             }
 
             .bg {
-                background: -webkit-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
-                background: -o-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
-                background: -moz-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
-                background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg1);
+                background: -webkit-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg3);
+                background: -o-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg3);
+                background: -moz-linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg3);
+                background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), $colorbg3);
                 width: 100%;
                 height: 100%;
                 position: absolute;
@@ -903,7 +898,7 @@ html {
                     padding-bottom: 80%;
                     border-radius: 50%;
                     margin: 10%;
-                    border: 5px dashed $color4;
+                    border: 5px dashed $color5;
                     .bg {
                         background-size: cover;
                         background-position: center;
@@ -917,7 +912,7 @@ html {
                     transform: scale(1.1);
                     overflow: hidden;
                     z-index: 20;
-                    box-shadow: 0 5px 30px $color3;
+                    box-shadow: 0 5px 10px $color5;
 
                     .bg-blur {
                         filter: blur(2px);
@@ -930,7 +925,7 @@ html {
                     border-radius: 50%;
                     left: 0;
                     position: absolute;
-                    background: linear-gradient(180deg, $colorbg2, rgba(255, 255, 253, 0.8), $colorbg1);
+                    background: linear-gradient(180deg, $colorbg3, rgba(255, 255, 253, 0.8), $colorbg1);
 
                     h2 {
                         opacity: 0;
@@ -940,7 +935,7 @@ html {
                         transform: translate(-50%, -50%);
                         transition: ease-in 0.5s;
                         white-space: nowrap;
-                        color: $color4;
+                        color: $color5;
                         background-image: none;
                         -webkit-text-fill-color: unset;
                         font-weight: bold;
@@ -959,8 +954,8 @@ html {
                         background: -o-linear-gradient(0, $color1);
                         background: -moz-linear-gradient(0, $color1);
                         background: linear-gradient(0, $color1);
-                        color: $color4;
-                        border: 2px dashed $color4;
+                        color: $color5;
+                        border: 2px dashed $color5;
 
                     }
                 }
@@ -971,7 +966,7 @@ html {
 
                     h2 {
                         opacity: 1;
-                        top: 35% !important;
+                        top: 40% !important;
                         left: 50% !important;  
                     }
 
@@ -982,7 +977,7 @@ html {
    
                         &:hover {
                             color: white;
-                            background-color: $color4;
+                            background-color: $color5;
                             border: 2px dashed rgb(255, 255, 255);
                         }
                     }
@@ -1014,16 +1009,16 @@ html {
 
             width: 100%;
             padding: 8% 0 5% 0;
-            background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-            background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-            background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg2);
+            background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg3);
+            background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg3);
+            background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg3);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), $colorbg3);
 
             .container {
                 .contactme {
                     border-radius: 10px;
                     text-align: center;
-                    background-color: $colorbg2;
+                    background-color: #e9dbd2bd;
                     padding: 3%;
 
                     h1 {

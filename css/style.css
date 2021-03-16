@@ -46,7 +46,7 @@ html body #backtotop img {
 html body .pre-loading {
   width: 100vw;
   height: 100vh;
-  background-color: #e2d5d5;
+  background-color: #fef5d4;
   z-index: 10;
   position: fixed;
   top: 0;
@@ -250,7 +250,7 @@ html body #homepage {
 html body #homepage .bg {
   width: 100%;
   height: 100%;
-  background: linear-gradient(220deg, #fffffd, #e2d5d5c0);
+  background: linear-gradient(220deg, #fffffd, #fef5d4bb);
   position: absolute;
   top: 0;
 }
@@ -330,7 +330,7 @@ html body #homepage .ani .intro .aboutbtn:after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #e2d5d5c0;
+  background-color: #fef5d4bb;
   border-radius: 10rem;
   z-index: -2;
 }
@@ -342,7 +342,7 @@ html body #homepage .ani .intro .aboutbtn:before {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #8e7f7f;
+  background-color: #eec8dd;
   -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 10rem;
@@ -359,7 +359,7 @@ html body #homepage .ani .intro .aboutbtn:hover:before {
 }
 
 html body #intropage:hover .ball {
-  background-color: #e2d5d5;
+  background-color: #eec8dd;
   top: 10%;
   border-radius: 50%;
   height: 400px;
@@ -461,7 +461,7 @@ html body #intropage {
   width: 100%;
   padding-top: 5%;
   margin: 2rem 0 1rem 0;
-  background: linear-gradient(20deg, rgba(255, 255, 255, 0.25), #fef5d4c9);
+  background: linear-gradient(20deg, rgba(255, 255, 255, 0.25), #efbad6bb);
   text-align: center;
   -webkit-transform: skewY(-7deg);
           transform: skewY(-7deg);
@@ -599,13 +599,13 @@ html body #experience {
     outline: none;
   }
   html body #experience div ul li:hover div time {
-    background-color: #e2d5d5;
+    background-color: #fef5d4;
     color: #4d4d4d;
     -webkit-transition: unset;
     transition: unset;
   }
   html body #experience div ul li:hover::after {
-    background: #8e7f7f;
+    background: #eec8dd;
     border-radius: 0%;
     -webkit-transition: unset;
     transition: unset;
@@ -638,11 +638,11 @@ html body #experience ul {
 
 html body #experience ul li:hover div {
   background-color: #fef5d49f;
-  outline: #865858 dashed 3px;
+  outline: #eaeaff dashed 3px;
 }
 
 html body #experience ul li:hover div time {
-  background-color: #8e7f7f;
+  background-color: #A16B47;
   color: white;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
@@ -651,7 +651,7 @@ html body #experience ul li:hover div time {
 html body #experience ul li:hover::after {
   width: 30px;
   height: 30px;
-  background: #ff97a8;
+  background: #eec8dd;
   border-radius: 50%;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
@@ -678,7 +678,7 @@ html body #experience ul li::before {
 }
 
 html body #experience ul li::after {
-  background: #8e7f7f;
+  background: #A16B47;
   content: '';
   width: 25px;
   height: 25px;
@@ -705,7 +705,7 @@ html body #experience ul li div {
 }
 
 html body #experience ul li div time {
-  background-color: #e2d5d5;
+  background-color: #fef5d4;
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
 }
@@ -783,8 +783,8 @@ html body #skills .container .cardpool {
 }
 
 html body #skills .container .cardpool .card {
-  border: 2px dashed #865858;
-  background: linear-gradient(220deg, #e2d5d5, white, #e2d5d5);
+  border: 2px dashed #A16B47;
+  background: linear-gradient(220deg, #fef5d4, white, #fef5d4);
   margin: 10px;
   padding: 5%;
   width: 100%;
@@ -813,7 +813,6 @@ html body #skills .container .cardpool .back {
 html body #skills .container .cardpool .front .card-title,
 html body #skills .container .cardpool .back .card-title {
   font-weight: bold;
-  color: #865858;
 }
 
 html body #skills .container .cardpool .front .card-title,
@@ -826,7 +825,7 @@ html body #skills .container .cardpool .back .card-text {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   white-space: nowrap;
-  color: #865858;
+  color: #A16B47;
 }
 
 html body #skills .container .cardpool .back {
@@ -908,7 +907,7 @@ html body #portfolio h1 {
 }
 
 html body #portfolio .bg {
-  background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), #fef5d4c9);
+  background: linear-gradient(220deg, rgba(255, 255, 255, 0.9), #fef5d4bb);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -933,7 +932,7 @@ html body #portfolio .container .p-resume {
   padding-bottom: 80%;
   border-radius: 50%;
   margin: 10%;
-  border: 5px dashed #865858;
+  border: 5px dashed #A16B47;
 }
 
 html body #portfolio .container .p-cat .bg,
@@ -951,8 +950,8 @@ html body #portfolio .container .p-resume:hover {
           transform: scale(1.1);
   overflow: hidden;
   z-index: 20;
-  -webkit-box-shadow: 0 5px 30px #8e7f7f;
-          box-shadow: 0 5px 30px #8e7f7f;
+  -webkit-box-shadow: 0 5px 10px #A16B47;
+          box-shadow: 0 5px 10px #A16B47;
 }
 
 html body #portfolio .container .p-cat:hover .bg-blur,
@@ -968,8 +967,8 @@ html body #portfolio .container .cover {
   border-radius: 50%;
   left: 0;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e2d5d5c0), color-stop(rgba(255, 255, 253, 0.8)), to(#fef5d4c9));
-  background: linear-gradient(180deg, #e2d5d5c0, rgba(255, 255, 253, 0.8), #fef5d4c9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fef5d4bb), color-stop(rgba(255, 255, 253, 0.8)), to(#efbad6bb));
+  background: linear-gradient(180deg, #fef5d4bb, rgba(255, 255, 253, 0.8), #efbad6bb);
 }
 
 html body #portfolio .container .cover h2 {
@@ -982,7 +981,7 @@ html body #portfolio .container .cover h2 {
   -webkit-transition: ease-in 0.5s;
   transition: ease-in 0.5s;
   white-space: nowrap;
-  color: #865858;
+  color: #A16B47;
   background-image: none;
   -webkit-text-fill-color: unset;
   font-weight: bold;
@@ -997,11 +996,11 @@ html body #portfolio .container .cover .url {
           transform: translate(-50%, -50%);
   -webkit-transition: ease-in 0.2s;
   transition: ease-in 0.2s;
-  background-color: #e2d5d5;
-  background: -webkit-gradient(linear, left top, left bottom, from(0), to(#e2d5d5));
-  background: linear-gradient(0, #e2d5d5);
-  color: #865858;
-  border: 2px dashed #865858;
+  background-color: #fef5d4;
+  background: -webkit-gradient(linear, left top, left bottom, from(0), to(#fef5d4));
+  background: linear-gradient(0, #fef5d4);
+  color: #A16B47;
+  border: 2px dashed #A16B47;
 }
 
 html body #portfolio .container .cover:hover {
@@ -1012,7 +1011,7 @@ html body #portfolio .container .cover:hover {
 
 html body #portfolio .container .cover:hover h2 {
   opacity: 1;
-  top: 35% !important;
+  top: 40% !important;
   left: 50% !important;
 }
 
@@ -1024,15 +1023,15 @@ html body #portfolio .container .cover:hover .url {
 
 html body #portfolio .container .cover:hover .url:hover {
   color: white;
-  background-color: #865858;
+  background-color: #A16B47;
   border: 2px dashed white;
 }
 
 html body #contact {
   width: 100%;
   padding: 8% 0 5% 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#e2d5d5c0));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #e2d5d5c0);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(#fef5d4bb));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25), #fef5d4bb);
 }
 
 @media (max-width: 991.98px) {
@@ -1058,7 +1057,7 @@ html body #contact {
 html body #contact .container .contactme {
   border-radius: 10px;
   text-align: center;
-  background-color: #e2d5d5c0;
+  background-color: #e9dbd2bd;
   padding: 3%;
 }
 
