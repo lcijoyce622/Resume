@@ -33,9 +33,6 @@ html {
         margin: 0;
         letter-spacing: 1.5px;
         font-family: $fontfamily;
-
-
-
         #backtotop {
             @media (max-width: 991.98px) {
                 left: 50%;
@@ -188,9 +185,7 @@ html {
         #homepage {
             @media (max-width: 991.98px) {
                 padding-top: 30%;
-
             }
-
             margin: 0;
             margin-top: -10vh;
             height: 100vh;
@@ -322,28 +317,22 @@ html {
                 width: 400px;
                 animation: slide 2s;
                 opacity: 0.2;
-
-                // transform: skewY(7deg);
                 @keyframes slide {
                     0% {
                         transform: scale(0.5);
-                        // transform: skewY(7deg);
                         opacity: 0.2;
                     }
 
                     50% {
                         transform: scale(1);
-                        // transform: skewY(7deg);
                         opacity: 0.5;
                     }
 
                     100% {
                         transform: scale(1);
-                        // transform: skewY(7deg);
                         opacity: 0.2;
                     }
                 }
-
             }
 
             .b1 {
@@ -393,7 +382,6 @@ html {
 
         @media (max-width: 991.98px) {
             #intropage:hover {
-
                 .b2,
                 .b3,
                 .b4,
@@ -507,7 +495,6 @@ html {
 
                     .avatarfr:hover {
                         filter: grayscale(0%);
-
                         img {
                             border-radius: 0%;
                             transition: ease-in 0.2s;
@@ -694,8 +681,6 @@ html {
                 display: block;
                 margin-bottom: 10px;
             }
-
-
         }
 
         #skills {
@@ -738,7 +723,7 @@ html {
                         background: -moz-linear-gradient(220deg, $color1, white, $color1);
                         background: linear-gradient(220deg, $color1, white, $color1);
                         margin: 10px;
-                        padding: 5%; //要置中
+                        padding: 5%;
                         width: 100%;
                         height: 7rem;
                         text-align: center;
@@ -829,8 +814,6 @@ html {
 
         #portfolio {
             @media (max-width: 991.98px) {
-
-                // padding-top: 20%;
                 h1 {
                     top: -5% !important;
                 }
@@ -939,7 +922,6 @@ html {
                         background-image: none;
                         -webkit-text-fill-color: unset;
                         font-weight: bold;
-                        // letter-spacing: 10px;
                     }
 
                     .url {
@@ -956,7 +938,6 @@ html {
                         background: linear-gradient(0, $color1);
                         color: $color5;
                         border: 2px dashed $color5;
-
                     }
                 }
 
@@ -1034,8 +1015,6 @@ html {
 
                     .iconpool {
                         display: grid;
-
-
                         .icon {
                             display: inline-flex;
                             float: left;
@@ -1049,7 +1028,6 @@ html {
 
                     .urlpool {
                         margin-top: 3px;
-
                         .url {
                             height: 50px;
 
