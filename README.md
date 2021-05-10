@@ -1,1 +1,1 @@
-This project is published at https://lcijoyce622.github.io/todo-list/ .
+This project is published at https://lcijoyce622.github.io/Resume/ .
