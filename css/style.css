@@ -840,10 +840,17 @@ html body #skills .container .cardpool .card:hover {
           box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.356);
 }
 
+html body #skills .container .cardpool .card:hover .front {
+  opacity: 0;
+}
+
 @media (max-width: 991.98px) {
   html body #skills .container .cardpool .card:hover {
     -webkit-transform: none;
     transform: none;
+  }
+  html body #skills .container .cardpool .card:hover .front {
+    opacity: 1;
   }
   html body #skills .container .cardpool .card {
     height: unset;

@@ -771,6 +771,9 @@ html {
                         -moz-transform: rotateY(180deg);
                         transform: rotateY(180deg);
                         box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.356);
+                        .front{
+                            opacity: 0;
+                        }
 
                     }
 
@@ -779,6 +782,9 @@ html {
                             -webkit-transform: none;
                             -moz-transform: none;
                             transform: none;
+                            .front{
+                                opacity: 1;
+                            }
                         }
 
                         .card {
